@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "name": "webserver",
   "private": true,
@@ -17,8 +16,7 @@
     "vite": "^8.0.1"
   }
 }
-||||||| (empty tree)
-=======
+
 {
   "name": "portfoliousingvue",
   "private": true,
@@ -37,4 +35,3 @@
     "vite": "^8.0.1"
   }
 }
->>>>>>> f8b424a (added a template to how it could look)
