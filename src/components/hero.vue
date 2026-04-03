@@ -20,32 +20,39 @@
       </div>
       <div class="about-textbox">
         <h3>Software | Design | Networking | Cyber</h3>
-        <h4>Some text about me where i tell about myself</h4>
+        <h4>
+          I am a passionate technology enthusiast with a creative side. 
+          I love building, tinkering, this can be seen with me working on my own homelab, 
+          always experimenting with new hardware and software. 
+          My interests also include creating abstract drawings (often inspired by sea life) and writing. 
+          I have started my own book! I thrive when being part of something bigger, 
+          which is why I have applied to the Danish Home Guard ("Hjemmeværnet").
+        </h4>
       </div> 
     </section>
 
-    <section class="github-stats">
+    <section class="github">
       <h3>GitHub Stats</h3>
       <div class="github-stats">
         <div class="repos">
-          <i class="icon"></i>
+          <i class="fa-solid fa-book"></i>
           <p class="p2">55</p>
-          <p class="p2">Repositories</p>
+          <p class="text p2">Repositories</p>
         </div>
         <div class="stars">
-          <i class="icon"></i>
+          <i class="fa-solid fa-star"></i>
           <p class="p2">55</p>
-          <p class="p2">Stars</p>
+          <p class="text p2">Stars</p>
         </div> 
         <div class="followers">
-          <i class="icon"></i>
+          <i class="fa-solid fa-user-plus"></i>
           <p class="p2">55</p>
-          <p class="p2">Followers</p>
+          <p class="text p2">Followers</p>
         </div>
         <div class="following">
-          <i class="icon"></i>
+          <i class="fa-solid fa-user-check"></i>
           <p class="p2">55</p>
-          <p class="p2">Following</p>
+          <p class="text p2">Following</p>
         </div>
       </div>
       <div class="chart-wrapper">

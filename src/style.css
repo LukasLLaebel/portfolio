@@ -40,30 +40,37 @@ section {
 
 h1 {
   font-size: 22px;
+  margin: 0;
 }
 
 h2 {
   font-size: 18px;
+  margin: 0;
 }
 
 h3 {
   font-size: 16px;
+  margin: 0;
 }
 
 h4 {
   font-size: 14px;
+  margin: 0;
 }
 
 p {
   font-size: 10px;
+  margin: 0;
 }
 
 p .p2 {
   font-size: 8px;
+  margin: 0;
 }
 
 p .mini {
   font-size: 6px;
+  margin: 0;
 }
 
 
@@ -125,6 +132,65 @@ p .mini {
 .about h4 {
   color: var(--gray-200);
 
+}
+
+/* Github stats and chart */
+.github h3 {
+  color: var(--blue-100);
+}
+
+
+.github-stats {
+  display: flex;
+  gap: 6px;
+  height: 80px;
+  width: 100%;
+}
+
+/* All elements in github-stats */
+.github-stats>* {
+  flex: 1;
+  min-width: 0;
+  background-color: var(--navy-300);
+  padding: 8px;
+  color: var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.github-stats i {
+  font-size: 25px;
+}
+
+.github-stats>* .text {
+  color: var(--gray-100);
+}
+
+.chart-wrapper {
+  position: relative;
+  background-color: var(--navy-300);
+  height: 172px;
+  margin-top: 6px;
+  padding: 7px 13px;
+  border-radius: 20px;
+}
+
+.chart-wrapper h4 {
+  color: var(--gray-100)
+}
+
+.chart-wrapper .chart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--gray-300);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
 }
 
 
