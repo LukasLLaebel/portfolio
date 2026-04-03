@@ -1,4 +1,28 @@
-:root {}
+:root {
+  --navy-100: #181C2A;
+  --navy-200: #232946;
+  --navy-300: #1A1F33;
+
+  --gray-100: #EFF0F3;
+  --gray-200: #C7C9D1;
+  --gray-300: #6C7393;
+
+  --blue-100: #3B82F6;
+  --blue-200: #8DA1FF;
+  --blue-300: #38BDF8;
+}
+
+body {
+  font-family: "Caprasimo";
+  background-color: var(--navy-100);
+}
+
+section {
+  background-color: var(--navy-200);
+  border-radius: 20px;
+  padding: 15px;
+}
+
 
 
 

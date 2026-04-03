@@ -3,7 +3,7 @@
 
 
 <template>
-  <section class="hero">
+  <main class="hero">
     <nav></nav>
     <section class="about">
       <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
@@ -13,9 +13,9 @@
       <div class="about-textbox">
         <h3>Software | Design | Networking | Cyber</h3>
         <h4>Some text about me where i tell about myself</h4>
-      </div>
-      
+      </div> 
     </section>
+
     <section class="github-stats">
       <h3>GitHub Stats</h3>
       <div class="github-stats">
@@ -265,7 +265,7 @@
       </div>
 
     </section>
-  </section>
+  </main>
 </template>
 
 
