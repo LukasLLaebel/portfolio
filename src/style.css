@@ -13,8 +13,23 @@
 }
 
 body {
+  margin: 0;
   font-family: "Caprasimo";
   background-color: var(--navy-100);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+  padding: 40px;
+  height: 50vh;
+}
+
+nav {
+  background-color: var(--navy-200);
+  opacity: 0.5;
+  height: 32px;
 }
 
 section {
@@ -23,8 +38,94 @@ section {
   padding: 15px;
 }
 
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 10px;
+}
+
+p .p2 {
+  font-size: 8px;
+}
+
+p .mini {
+  font-size: 6px;
+}
 
 
+/* About section */
+.profile-pic {
+  width: 128px;
+  height: 128px;
+  background-color: var(--gray-200);
+  border-bottom-right-radius: 80px;
+  border-top-left-radius: 10px;
+  border: solid 1px var(--gray-300);
+  position: absolute;
+  z-index: 3;
+}
+
+.profile-shadow {
+  width: 132px;
+  height: 132px;
+  background-color: var(--navy-200);
+  border-bottom-right-radius: 80px;
+  border-top-left-radius: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+.about-textbox {
+  background-color: var(--navy-300);
+  border-radius: 10px;
+  margin-left: 85px;
+  padding: 10px 78px;
+}
+
+.about h1 {
+  color: var(--gray-100);
+  padding-left: calc(85px + 78px);
+}
+
+.socials {
+  padding-left: calc(85px + 78px);
+}
+
+.socials a {
+  color: var(--gray-200);
+  font-size: 24px;
+  margin-right: 12px;
+  transition: 0.2s;
+}
+
+.socials a:hover {
+  color: var(--blue-200);
+  transform: translateY(-2px);
+}
+
+.about h3 {
+  color: var(--gray-100);
+
+}
+
+.about h4 {
+  color: var(--gray-200);
+
+}
 
 
 /* Test to insure ratio */

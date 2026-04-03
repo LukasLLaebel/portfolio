@@ -3,13 +3,21 @@
 
 
 <template>
+  <nav></nav>
   <main class="hero">
-    <nav></nav>
     <section class="about">
-      <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+      <!--<img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic"> -->
+      <img alt="profile" src="../assets/profile.png" class="profile-pic">
+      <div class="profile-shadow"></div>
       <h1>Lukas Leander Laebel</h1>
-      <i class="linkedin"></i>
-      <i class="github"></i>
+      <div class="socials">
+        <a href="https://linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
       <div class="about-textbox">
         <h3>Software | Design | Networking | Cyber</h3>
         <h4>Some text about me where i tell about myself</h4>
