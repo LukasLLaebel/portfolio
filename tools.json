@@ -1,0 +1,44 @@
+{
+  "tools": [
+    {
+      "label": "PHP",
+      "logo": [
+        {
+          "img-alt": "PHP",
+          "img-src": "font-awesome/php.svg",
+          "width": 15,
+          "height": 11,
+          "gab-left": 2,
+          "gab-right": 2,
+          "gab-top": 2,
+          "gab-bottom": 2,
+          "real-ratio": "11:16",
+          "real-color": "#800080"
+        }
+      ],
+      "witdh": 38,
+      "height": 15,
+      "gab-left": 3,
+      "gab-right": 4
+    },
+    {
+      "label": "HTML",
+      "logo": [
+        {
+          "img-alt": "HTML",
+          "img-src": "font-awesome/html.svg",
+          "width": 11,
+          "height": 7,
+          "gab-left": 5,
+          "gab-top": 3,
+          "gab-bottom": 2,
+          "real-ratio": "3:1"
+        }
+      ],
+      "witdh": 38,
+      "height": 16,
+      "gab-left": 3,
+      "gab-right": 4
+    }
+  ]
+}

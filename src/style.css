@@ -1,1 +1,14 @@
+:root {}
 
+
+
+
+/* Test to insure ratio */
+.logo {
+  width: 200px;
+  /* or max-width */
+  height: auto;
+  /* Maintains proportional height */
+  aspect-ratio: attr(width) / attr(height);
+  /* Ensures aspect ratio */
+}
