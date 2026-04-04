@@ -263,17 +263,64 @@
       <h3>Tech Stack</h3>
       <div class="tech-01">
         <div class="logo-wrapper">
-          <i></i>
+          <i class="fab fa-js"></i>
         </div>
         <p class="mini">JavaScript</p>
       </div>
       <div class="tech-02">
         <div class="logo-wrapper">
-          <i></i>
+          <i class="fab fa-php"></i>
         </div>
         <p class="mini">PHP</p>
       </div>
-
+      <div class="tech-03">
+        <div class="logo-wrapper">
+          <i class="fab fa-html5"></i>
+        </div>
+        <p class="mini">HTML</p>
+      </div>
+      <div class="tech-04">
+        <div class="logo-wrapper">
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <p class="mini">CSS</p>
+      </div>
+      <div class="tech-05">
+        <div class="logo-wrapper">
+          <i class="fab fa-node-js"></i>
+        </div>
+        <p class="mini">Node.js</p>
+      </div>
+      <div class="tech-06">
+        <div class="logo-wrapper">
+          <i class="fab fa-react"></i>
+        </div>
+        <p class="mini">React</p>
+      </div>
+      <div class="tech-07">
+        <div class="logo-wrapper">
+          <i class="fab fa-vuejs"></i>
+        </div>
+        <p class="mini">Vue.js</p>
+      </div>
+      <div class="tech-08">
+        <div class="logo-wrapper">
+          <i class="fab fa-python"></i>
+        </div>
+        <p class="mini">Python</p>
+      </div>
+      <div class="tech-09">
+        <div class="logo-wrapper">
+          <i class="fab fa-java"></i>
+        </div>
+        <p class="mini">Java</p>
+      </div>
+      <div class="tech-10">
+        <div class="logo-wrapper">
+          <i class="fab fa-git-alt"></i>
+        </div>
+        <p class="mini">Git</p>
+      </div>
     </section>
   </main>
 </template>
