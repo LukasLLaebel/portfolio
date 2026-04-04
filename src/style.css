@@ -153,12 +153,27 @@ p .mini {
   min-width: 0;
   background-color: var(--navy-300);
   padding: 8px;
-  color: var(--gray-300);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+}
+
+.github-stats>*:nth-child(1) {
+  color: var(--gray-300);
+}
+
+.github-stats>*:nth-child(2) {
+  color: #FFDF00;
+}
+
+.github-stats>*:nth-child(3) {
+  color: var(--gray-200);
+}
+
+.github-stats>*:nth-child(4) {
+  color: var(--blue-200);
 }
 
 .github-stats i {
