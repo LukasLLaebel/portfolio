@@ -64,203 +64,190 @@
     <section class="projects">
       <h3>Featured projects</h3>
       <div class="projects-wrapper">
-        <div class="project-01">
+        <div class="project">
           <h4>Project 1</h4>
           <div class="purple-line"></div>
           <div class="blue-line"></div>
           <p>Description of this project what it is about and all that stuff</p>
-          <div class="tool-01">
+          <div class="tools">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-php"></i>
               <p class="mini">PHP</p>
             </div>
-          </div>
-          <div class="tool-02">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-html5"></i>
               <p class="mini">HTML</p>
             </div>
-          </div>
-          <div class="tool-03">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-css3-alt"></i>
               <p class="mini">CSS</p>
             </div>
           </div>
-          <div class="stars">
-            <i></i>
-            <p class="mini">10</p> 
-          </div>
-          <div class="Go-to">
-            <i></i> <!-- github logo -->
-            <i></i> <!-- hyperlink --> 
+          <div class="meta-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <p class="mini">10</p>
+            </div>
+            <div class="go-to">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </div>
           </div>
         </div>
-  
-        <div class="project-02">
+
+        <div class="project">
           <h4>Project 2</h4>
           <div class="purple-line"></div>
           <div class="blue-line"></div>
           <p>Description of this project what it is about and all that stuff</p>
-          <div class="tool-01">
+          <div class="tools">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-php"></i>
               <p class="mini">PHP</p>
             </div>
-          </div>
-          <div class="tool-02">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-html5"></i>
               <p class="mini">HTML</p>
             </div>
-          </div>
-          <div class="tool-03">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-css3-alt"></i>
               <p class="mini">CSS</p>
             </div>
           </div>
-          <div class="stars">
-            <i></i>
-            <p class="mini">10</p> 
+          <div class="meta-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <p class="mini">10</p>
+            </div>
+            <div class="go-to">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </div>
           </div>
-          <div class="Go-to">
-            <i></i> <!-- github logo -->
-            <i></i> <!-- hyperlink --> 
-          </div>
-        </div> 
+        </div>
 
-        <div class="project-03">
+        <div class="project">
           <h4>Project 3</h4>
           <div class="purple-line"></div>
           <div class="blue-line"></div>
           <p>Description of this project what it is about and all that stuff</p>
-          <div class="tool-01">
+          <div class="tools">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-php"></i>
               <p class="mini">PHP</p>
             </div>
-          </div>
-          <div class="tool-02">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-html5"></i>
               <p class="mini">HTML</p>
             </div>
-          </div>
-          <div class="tool-03">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-css3-alt"></i>
               <p class="mini">CSS</p>
             </div>
           </div>
-          <div class="stars">
-            <i></i>
-            <p class="mini">10</p> 
+          <div class="meta-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <p class="mini">10</p>
+            </div>
+            <div class="go-to">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </div>
           </div>
-          <div class="Go-to">
-            <i></i> <!-- github logo -->
-            <i></i> <!-- hyperlink --> 
-          </div>
-        </div> 
+        </div>
 
-        <div class="project-04">
+        <div class="project">
           <h4>Project 4</h4>
           <div class="purple-line"></div>
           <div class="blue-line"></div>
           <p>Description of this project what it is about and all that stuff</p>
-          <div class="tool-01">
+          <div class="tools">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-php"></i>
               <p class="mini">PHP</p>
             </div>
-          </div>
-          <div class="tool-02">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-html5"></i>
               <p class="mini">HTML</p>
             </div>
-          </div>
-          <div class="tool-03">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-css3-alt"></i>
               <p class="mini">CSS</p>
             </div>
           </div>
-          <div class="stars">
-            <i></i>
-            <p class="mini">10</p> 
+          <div class="meta-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <p class="mini">10</p>
+            </div>
+            <div class="go-to">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </div>
           </div>
-          <div class="Go-to">
-            <i></i> <!-- github logo -->
-            <i></i> <!-- hyperlink --> 
-          </div>
-        </div> 
-
-        <div class="project-05">
+        </div>
+        <div class="project">
           <h4>Project 5</h4>
           <div class="purple-line"></div>
           <div class="blue-line"></div>
           <p>Description of this project what it is about and all that stuff</p>
-          <div class="tool-01">
+          <div class="tools">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-php"></i>
               <p class="mini">PHP</p>
             </div>
-          </div>
-          <div class="tool-02">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-html5"></i>
               <p class="mini">HTML</p>
             </div>
-          </div>
-          <div class="tool-03">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-css3-alt"></i>
               <p class="mini">CSS</p>
             </div>
           </div>
-          <div class="stars">
-            <i></i>
-            <p class="mini">10</p> 
+          <div class="meta-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <p class="mini">10</p>
+            </div>
+            <div class="go-to">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </div>
           </div>
-          <div class="Go-to">
-            <i></i> <!-- github logo -->
-            <i></i> <!-- hyperlink --> 
-          </div>
-        </div> 
-
-        <div class="project-06">
+        </div>
+        <div class="project">
           <h4>Project 6</h4>
           <div class="purple-line"></div>
           <div class="blue-line"></div>
           <p>Description of this project what it is about and all that stuff</p>
-          <div class="tool-01">
+          <div class="tools">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-php"></i>
               <p class="mini">PHP</p>
             </div>
-          </div>
-          <div class="tool-02">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-html5"></i>
               <p class="mini">HTML</p>
             </div>
-          </div>
-          <div class="tool-03">
             <div class="tool-bg">
-              <i></i>
+              <i class="fa-brands fa-css3-alt"></i>
               <p class="mini">CSS</p>
             </div>
           </div>
-          <div class="stars">
-            <i></i>
-            <p class="mini">10</p> 
+          <div class="meta-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <p class="mini">10</p>
+            </div>
+            <div class="go-to">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </div>
           </div>
-          <div class="Go-to">
-            <i></i> <!-- github logo -->
-            <i></i> <!-- hyperlink --> 
-          </div>
-        </div> 
+        </div>
+
       </div>
     </section>
 
