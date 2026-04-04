@@ -1,4 +1,6 @@
 :root {
+
+  /* Dark mode Colors */
   --navy-100: #181C2A;
   --navy-200: #232946;
   --navy-300: #1A1F33;
@@ -10,6 +12,8 @@
   --blue-100: #3B82F6;
   --blue-200: #8DA1FF;
   --blue-300: #38BDF8;
+
+  /* Light mode Colors */
 }
 
 body {
@@ -22,15 +26,11 @@ main {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 15px;
-  padding: 20px;
+  padding: 40px 20px;
   height: 50vh;
 }
 
-nav {
-  background-color: var(--navy-200);
-  opacity: 0.5;
-  height: 32px;
-}
+
 
 section {
   background-color: var(--navy-200);
@@ -73,6 +73,56 @@ p .mini {
   margin: 0;
 }
 
+/* Navbar */
+nav {
+  background-color: var(--navy-200);
+  opacity: 0.5;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav h4 {
+  color: var(--gray-200);
+  font-weight: 100;
+}
+
+nav i {
+  font-size: 18px;
+  color: var(--gray-200);
+
+}
+
+.theme-toggle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.fa-sun {
+  opacity: 0;
+}
+
+.fa-moon {
+  opacity: 1;
+}
+
+.theme-toggle.active .fa-sun {
+  opacity: 1;
+}
+
+.theme-toggle.active .fa-moon {
+  opacity: 0;
+}
 
 /* About section */
 .profile-pic {
@@ -110,6 +160,7 @@ p .mini {
 
 .socials {
   padding-left: calc(85px + 78px);
+  padding-bottom: 10px;
 }
 
 .socials a {
@@ -348,22 +399,42 @@ p .mini {
 
 
 /* tech stack */
+.tech-stack h3 {
+  color: var(--blue-100);
+}
 
+.tech-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3px;
+}
 
+.tech-wrapper>* {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--navy-300);
+  align-items: center;
+  padding: 5px;
+  color: var(--gray-100);
+}
 
+.tech-wrapper>*:first-child {
+  border-top-left-radius: 15px;
+}
 
+.tech-wrapper>*:nth-child(5) {
+  border-top-right-radius: 15px;
+}
 
+.tech-wrapper>*:nth-last-child(5) {
+  border-bottom-left-radius: 15px;
+}
 
+.tech-wrapper>*:last-child {
+  border-bottom-right-radius: 15px;
+}
 
-
-
-
-/* Test to insure ratio */
-.logo {
-  width: 200px;
-  /* or max-width */
-  height: auto;
-  /* Maintains proportional height */
-  aspect-ratio: attr(width) / attr(height);
-  /* Ensures aspect ratio */
+.tech-wrapper>* i {
+  font-size: 32px;
+  padding: 5px 15px 0 15px;
 }

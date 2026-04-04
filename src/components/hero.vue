@@ -1,12 +1,25 @@
 <script setup>
+
 </script>
 
 
 <template>
-  <nav></nav>
+<nav>
+  <h4 class="logo">Lukas Leander Laebel</h4>
+  <h4 class="nav-link">Home</h4>
+  <h4 class="nav-link">Projects</h4>
+  <h4 class="nav-link">Timeline</h4>
+  <h4 class="nav-link">Contact</h4>
+  <h4 class="nav-link">Blog</h4>
+
+  <div class="theme-toggle">
+    <i class="fa-regular fa-sun"></i>
+    <i class="fa-regular fa-moon"></i>
+  </div>
+</nav>
+
   <main class="hero">
     <section class="about">
-      <!--<img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic"> -->
       <img alt="profile" src="../assets/profile.png" class="profile-pic">
       <div class="profile-shadow"></div>
       <h1>Lukas Leander Laebel</h1>
@@ -261,68 +274,72 @@
 
     <section class="tech-stack">
       <h3>Tech Stack</h3>
-      <div class="tech-01">
-        <div class="logo-wrapper">
-          <i class="fab fa-js"></i>
+      <div class="tech-wrapper">
+        <div class="tech-01">
+          <div class="logo-wrapper">
+            <i class="fab fa-js"></i>
+          </div>
+          <p class="mini">JavaScript</p>
         </div>
-        <p class="mini">JavaScript</p>
-      </div>
-      <div class="tech-02">
-        <div class="logo-wrapper">
-          <i class="fab fa-php"></i>
+        <div class="tech-02">
+          <div class="logo-wrapper">
+            <i class="fab fa-php"></i>
+          </div>
+          <p class="mini">PHP</p>
         </div>
-        <p class="mini">PHP</p>
-      </div>
-      <div class="tech-03">
-        <div class="logo-wrapper">
-          <i class="fab fa-html5"></i>
+        <div class="tech-03">
+          <div class="logo-wrapper">
+            <i class="fab fa-html5"></i>
+          </div>
+          <p class="mini">HTML</p>
         </div>
-        <p class="mini">HTML</p>
-      </div>
-      <div class="tech-04">
-        <div class="logo-wrapper">
-          <i class="fab fa-css3-alt"></i>
+        <div class="tech-04">
+          <div class="logo-wrapper">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <p class="mini">CSS</p>
         </div>
-        <p class="mini">CSS</p>
-      </div>
-      <div class="tech-05">
-        <div class="logo-wrapper">
-          <i class="fab fa-node-js"></i>
+        <div class="tech-05">
+          <div class="logo-wrapper">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <p class="mini">Node.js</p>
         </div>
-        <p class="mini">Node.js</p>
-      </div>
-      <div class="tech-06">
-        <div class="logo-wrapper">
-          <i class="fab fa-react"></i>
+        <div class="tech-06">
+          <div class="logo-wrapper">
+            <i class="fab fa-react"></i>
+          </div>
+          <p class="mini">React</p>
         </div>
-        <p class="mini">React</p>
-      </div>
-      <div class="tech-07">
-        <div class="logo-wrapper">
-          <i class="fab fa-vuejs"></i>
+        <div class="tech-07">
+          <div class="logo-wrapper">
+            <i class="fab fa-vuejs"></i>
+          </div>
+          <p class="mini">Vue.js</p>
         </div>
-        <p class="mini">Vue.js</p>
-      </div>
-      <div class="tech-08">
-        <div class="logo-wrapper">
-          <i class="fab fa-python"></i>
+        <div class="tech-08">
+          <div class="logo-wrapper">
+            <i class="fab fa-python"></i>
+          </div>
+          <p class="mini">Python</p>
         </div>
-        <p class="mini">Python</p>
-      </div>
-      <div class="tech-09">
-        <div class="logo-wrapper">
-          <i class="fab fa-java"></i>
+        <div class="tech-09">
+          <div class="logo-wrapper">
+            <i class="fab fa-java"></i>
+          </div>
+          <p class="mini">Java</p>
         </div>
-        <p class="mini">Java</p>
-      </div>
-      <div class="tech-10">
-        <div class="logo-wrapper">
-          <i class="fab fa-git-alt"></i>
+        <div class="tech-10">
+          <div class="logo-wrapper">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <p class="mini">Git</p>
         </div>
-        <p class="mini">Git</p>
       </div>
     </section>
   </main>
 </template>
+
+
 
 
