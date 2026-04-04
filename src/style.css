@@ -39,37 +39,37 @@ section {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 24px;
   margin: 0;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 22px;
   margin: 0;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 18px;
   margin: 0;
 }
 
 p {
-  font-size: 10px;
+  font-size: 12px;
   margin: 0;
 }
 
 p .p2 {
-  font-size: 8px;
+  font-size: 10px;
   margin: 0;
 }
 
 p .mini {
-  font-size: 6px;
+  font-size: 8px;
   margin: 0;
 }
 
@@ -132,7 +132,7 @@ p .mini {
 .about h4 {
   color: var(--gray-200);
   padding-top: 5px;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 /* Github stats and chart */
@@ -205,14 +205,14 @@ p .mini {
 }
 
 .projects .purple-line {
-  margin-top: 2px;
+  margin-top: 4px;
   background-color: var(--blue-200);
   width: 80px;
 }
 
 .projects .blue-line {
   /* +line height  */
-  margin-top: calc(2px + 1px);
+  margin: calc(3px + 1px) 0 4px;
   background-color: var(--blue-300);
   width: 100px;
 }
@@ -220,10 +220,13 @@ p .mini {
 .projects-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  gap: 8px;
 }
 
 .projects-wrapper>* {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--navy-300);
   padding: 10px;
 }
@@ -255,20 +258,24 @@ p .mini {
 .tools {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tools .mini {
+  font-size: 10px;
 }
 
 .tool-bg {
   display: flex;
   align-items: center;
   gap: 3px;
-  margin-top: 4px;
   padding: 3px 15px;
   border-radius: 999px;
   background: rgba(60, 90, 140, 0.25);
   border: 1px solid rgba(80, 140, 255, 0.25);
   box-shadow: inset 0 0 10px rgba(0, 150, 255, 0.15);
   color: var(--blue-300);
-  font-size: 8px;
   position: relative;
   overflow: hidden;
 }
@@ -294,22 +301,26 @@ p .mini {
   display: flex;
   flex-direction: column;
   color: var(--blue-300);
-  text-decoration: none;
-  transition: 0.2s;
 }
 
 .projects-wrapper>* .stars .mini,
 .projects-wrapper>* .stars i,
 .projects-wrapper>* .go-to i {
+  margin-top: 5px;
   color: var(--gray-200);
   font-size: 10px;
+}
+
+.projects-wrapper>* .meta-row {
+  margin-top: auto;
+  /* pushes it to the bottom */
 }
 
 .meta-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .meta-row .stars,
@@ -318,6 +329,16 @@ p .mini {
   flex-direction: row;
   gap: 5px;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Test to insure ratio */
 .logo {

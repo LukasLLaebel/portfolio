@@ -19,7 +19,7 @@
         </a>
       </div>
       <div class="about-textbox">
-        <h3>Software | Design | Networking | Cyber</h3>
+        <h3>Software | Design | Networking | Cyber-security</h3>
         <h4>
           I am a passionate technology enthusiast with a creative side. 
           I love building, tinkering, this can be seen with me working on my own homelab, 
@@ -234,6 +234,14 @@
             <div class="tool-bg">
               <i class="fa-brands fa-css3-alt"></i>
               <p class="mini">CSS</p>
+            </div>
+            <div class="tool-bg">
+              <i class="fa-brands fa-php"></i>
+              <p class="mini">PHP</p>
+            </div>
+            <div class="tool-bg">
+              <i class="fa-brands fa-php"></i>
+              <p class="mini">PHP</p>
             </div>
           </div>
           <div class="meta-row">
