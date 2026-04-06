@@ -7,9 +7,11 @@ onMounted(async () => {
   const res = await fetch('http://localhost:3001/api/projects');
   projects.value = await res.json();
 });
+
 const pinnedProjects = computed(() => {
   return projects.value.filter(p => p.isPinned)
 })
+
 const getToolIcon = (toolName) => {
   const icons = {
     'PHP': 'fa-brands fa-php',
@@ -20,41 +22,10 @@ const getToolIcon = (toolName) => {
     'Node.js': 'fa-brands fa-node-js'
   };
   return icons[toolName] || 'fa-solid fa-code';
-}/*
-  const isDark = ref(true)
-
-  const toggleTheme = () => {
-    isDark.value = !isDark.value
-    document.body.classList.toggle('dark', isDark.value)
-
-  
-    localStorage.setItem('theme', isDark.value ? 'dark' : 'light')
-  }
-
-  onMounted(() => {
-    const saved = localStorage.getItem('theme')
-    if (saved === 'dark') {
-      isDark.value = true
-        document.body.classList.add('dark')
-    }
-  })
-  */
+}
 </script>
 
 <template>
-  <nav>
-    <h4 class="logo">Lukas Leander Laebel</h4>
-    <h4 class="nav-link">Home</h4>
-    <h4 class="nav-link">Projects</h4>
-    <h4 class="nav-link">Timeline</h4>
-    <h4 class="nav-link">Blog</h4>
-    <h4 class="nav-link">Contact</h4>
-    <div class="theme-toggle" @click="toggleTheme">
-      <i v-if="!isDark" class="fa-regular fa-sun"></i>
-      <i v-else class="fa-regular fa-moon"></i>
-    </div>
-  </nav>
-
   <main class="hero">
     <section class="about">
       <img alt="profile" src="../assets/profile.png" class="profile-pic">

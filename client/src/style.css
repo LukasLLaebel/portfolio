@@ -22,7 +22,7 @@ body {
   background-color: var(--navy-100);
 }
 
-main {
+.hero {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 15px;
@@ -75,56 +75,6 @@ a {
   text-decoration: none;
 }
 
-/* Navbar */
-nav {
-  background-color: var(--navy-200);
-  opacity: 0.5;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-nav h4 {
-  color: var(--gray-200);
-  font-weight: 100;
-}
-
-nav i {
-  font-size: 18px;
-  color: var(--gray-200);
-
-}
-
-.theme-toggle {
-  position: relative;
-  width: 20px;
-  height: 20px;
-}
-
-.theme-toggle i {
-  position: absolute;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-}
-
-.fa-sun {
-  opacity: 0;
-}
-
-.fa-moon {
-  opacity: 1;
-}
-
-.theme-toggle.active .fa-sun {
-  opacity: 1;
-}
-
-.theme-toggle.active .fa-moon {
-  opacity: 0;
-}
 
 /* About section */
 .profile-pic {

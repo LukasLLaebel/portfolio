@@ -23,7 +23,7 @@ const getToolIcon = (toolName) => {
 
 <template>
 <section class="projects">
-      <h3>Featured projects</h3>
+      <h1>Projects</h1>
       <div class="projects-wrapper">
         <div class="project" v-for="project in projects" :key="project.id">
         <!--<div class="project" v-if="project.isPinned" :key="project.id"> -->
