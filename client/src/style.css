@@ -30,8 +30,6 @@ main {
   height: 50vh;
 }
 
-
-
 section {
   background-color: var(--navy-200);
   border-radius: 20px;
@@ -71,6 +69,10 @@ p .p2 {
 p .mini {
   font-size: 8px;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Navbar */

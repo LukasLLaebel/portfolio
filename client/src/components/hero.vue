@@ -8,7 +8,17 @@ onMounted(async () => {
   projects.value = await res.json();
 });
 
-/*
+const getToolIcon = (toolName) => {
+  const icons = {
+    'PHP': 'fa-brands fa-php',
+    'HTML': 'fa-brands fa-html5',
+    'CSS': 'fa-brands fa-css3-alt',
+    'JavaScript': 'fa-brands fa-js',
+    'Vue': 'fa-brands fa-vuejs',
+    'Node.js': 'fa-brands fa-node-js'
+  };
+  return icons[toolName] || 'fa-solid fa-code';
+}/*
   const isDark = ref(true)
 
   const toggleTheme = () => {
@@ -108,17 +118,9 @@ onMounted(async () => {
           <div class="blue-line"></div>
           <p>{{ project.description }}</p>
           <div class="tools">
-            <div class="tool-bg">
-              <i class="fa-brands fa-php"></i>
-              <p class="mini">PHP</p>
-            </div>
-            <div class="tool-bg">
-              <i class="fa-brands fa-html5"></i>
-              <p class="mini">HTML</p>
-            </div>
-            <div class="tool-bg">
-              <i class="fa-brands fa-css3-alt"></i>
-              <p class="mini">CSS</p>
+            <div v-for="tool in project.tools" :key="tool" class="tool-bg">
+              <i :class="getToolIcon(tool)"></i>
+              <p class="mini">{{ tool }}</p>
             </div>
           </div>
           <div class="meta-row">
