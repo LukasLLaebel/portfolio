@@ -2,14 +2,30 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import db from './db.js';
+import githubSyncJob from './jobs/github.sync.js';
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+githubSyncJob.start();
+
 app.use(cors());
 app.use(express.json());
+
+console.log('Running GitHub sync now for testing...');
+await githubSyncJob.syncProjects();
+
+// Optional: Manual sync endpoint (for testing)
+app.post('/api/sync-github', async (req, res) => {
+  try {
+    await githubSyncJob.syncProjects();
+    res.json({ success: true, message: 'GitHub sync completed' });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
 
 // Get all projects
 app.get('/api/projects', async (req, res) => {
@@ -57,4 +73,10 @@ app.delete('/api/projects/:id', async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
+});
+
+process.on('SIGTERM', () => {
+  console.log('Shutting down gracefully...');
+  githubSyncJob.stop();
+  process.exit(0);
 });

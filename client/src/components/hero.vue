@@ -113,7 +113,8 @@ const getToolIcon = (toolName) => {
       <h3>Featured projects</h3>
       <div class="projects-wrapper">
         <div class="project" v-for="project in projects" :key="project.id">
-          <h4>{{ project.title }}</h4>
+        <!--<div class="project" v-if="project.isPinned" :key="project.id"> -->
+          <h4>{{ project.name }}</h4>
           <div class="purple-line"></div>
           <div class="blue-line"></div>
           <p>{{ project.description }}</p>

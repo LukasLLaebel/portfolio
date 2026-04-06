@@ -1,74 +1,559 @@
 {
   "projects": [
     {
-      "id": 1,
-      "title": "Project 1",
-      "description": "My first project",
-      "tools": [
-        "PHP",
-        "HTML",
-        "CSS"
+      "id": 1008173767,
+      "name": "AD-UserAdd",
+      "owner": "LukasLLaebel",
+      "description": "adds users to an active directory using powershell. We do that from an CSV file.",
+      "link": "https://github.com/LukasLLaebel/AD-UserAdd",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "PowerShell",
+          "percent": 100
+        }
       ],
-      "link": "https://example.com"
+      "primaryLanguage": "PowerShell",
+      "tools": [
+        "PowerShell"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.162Z"
     },
     {
-      "id": 2,
-      "title": "Project 2",
-      "description": "My second project",
-      "tools": [
-        "PHP",
-        "HTML",
-        "CSS"
+      "id": 924558373,
+      "name": "bin2dec",
+      "owner": "LukasLLaebel",
+      "description": "a binary to decimal converter made in python. ",
+      "link": "https://github.com/LukasLLaebel/bin2dec",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "Python",
+          "percent": 100
+        }
       ],
-      "link": "https://example.com"
+      "primaryLanguage": "Python",
+      "tools": [
+        "Python"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.213Z"
     },
     {
-      "id": 3,
-      "title": "Project 3",
-      "description": "My third project",
-      "tools": [
-        "PHP",
-        "HTML",
-        "CSS"
+      "id": 974075225,
+      "name": "boxed-code-in-LaTeX",
+      "owner": "LukasLLaebel",
+      "description": "Ever wanted to include code in you LaTeX document but it looks ugly? Now you got it.",
+      "link": "https://github.com/LukasLLaebel/boxed-code-in-LaTeX",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "TeX",
+          "percent": 100
+        }
       ],
-      "link": "https://example.com"
+      "primaryLanguage": "TeX",
+      "tools": [
+        "TeX"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.206Z"
     },
     {
-      "id": 4,
-      "title": "Project 4",
-      "description": "My forth project",
-      "tools": [
-        "PHP",
-        "HTML",
-        "CSS"
+      "id": 1067890327,
+      "name": "C-Code",
+      "owner": "LukasLLaebel",
+      "description": "Some of all my C code i made here in IMPR",
+      "link": "https://github.com/LukasLLaebel/C-Code",
+      "stars": 0,
+      "forks": 6,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "C",
+          "percent": 95.8
+        },
+        {
+          "name": "CMake",
+          "percent": 4.2
+        }
       ],
-      "link": "https://example.com"
+      "primaryLanguage": "C",
+      "tools": [
+        "C",
+        "CMake"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.214Z"
     },
     {
-      "id": 2,
-      "title": "Project 5",
-      "description": "My fifth project",
-      "tools": [
-        "PHP",
-        "HTML",
-        "CSS"
+      "id": 1155520970,
+      "name": "Collaborative-Typst",
+      "owner": "LukasLLaebel",
+      "description": "With the use of OT typst can run locally with one acting as server and others as client. Purpose of this is to make typst easier and more used around the world.",
+      "link": "https://github.com/LukasLLaebel/Collaborative-Typst",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "JavaScript",
+          "percent": 82.4
+        },
+        {
+          "name": "HTML",
+          "percent": 17.6
+        }
       ],
-      "link": "https://example.com"
+      "primaryLanguage": "JavaScript",
+      "tools": [
+        "JavaScript",
+        "HTML"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.222Z"
     },
     {
-      "id": 6,
-      "title": "Project 6",
-      "description": "My sixth project",
+      "id": 1191861291,
+      "name": "Cookie-Clicker",
+      "owner": "LukasLLaebel",
+      "description": "A clone of cookie clicker just to try some plain Javascript. It is made completly without frameworks and is just a challenge to see how much i can do from scratch",
+      "link": "https://github.com/LukasLLaebel/Cookie-Clicker",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "JavaScript",
+          "percent": 64.1
+        },
+        {
+          "name": "CSS",
+          "percent": 29.8
+        },
+        {
+          "name": "HTML",
+          "percent": 6.1
+        }
+      ],
+      "primaryLanguage": "JavaScript",
+      "tools": [
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.224Z"
+    },
+    {
+      "id": 980531958,
+      "name": "DailyQuoteInC",
+      "owner": "LukasLLaebel",
+      "description": "Get a daily qoute or add your own quotes if that what you like. Simple program in C",
+      "link": "https://github.com/LukasLLaebel/DailyQuoteInC",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "C",
+          "percent": 100
+        }
+      ],
+      "primaryLanguage": "C",
+      "tools": [
+        "C"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.241Z"
+    },
+    {
+      "id": 988815448,
+      "name": "E-mail_Cleaner",
+      "owner": "LukasLLaebel",
+      "description": "Clean up the subscribed email newsletters",
+      "link": "https://github.com/LukasLLaebel/E-mail_Cleaner",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "Python",
+          "percent": 100
+        }
+      ],
+      "primaryLanguage": "Python",
+      "tools": [
+        "Python"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.218Z"
+    },
+    {
+      "id": 925612708,
+      "name": "FindNumberWithLetter",
+      "owner": "LukasLLaebel",
+      "description": "ever wanted to figure out all the numbers with a spesific letter",
+      "link": "https://github.com/LukasLLaebel/FindNumberWithLetter",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "Python",
+          "percent": 100
+        }
+      ],
+      "primaryLanguage": "Python",
+      "tools": [
+        "Python"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.234Z"
+    },
+    {
+      "id": 1090462390,
+      "name": "logo",
+      "owner": "LukasLLaebel",
+      "description": "This is the logo for the F-club.",
+      "link": "https://github.com/LukasLLaebel/logo",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "PostScript",
+          "percent": 100
+        }
+      ],
+      "primaryLanguage": "PostScript",
+      "tools": [
+        "PostScript"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.241Z"
+    },
+    {
+      "id": 1123563772,
+      "name": "lukasleander_dk",
+      "owner": "LukasLLaebel",
+      "description": "my website i guess",
+      "link": "https://github.com/LukasLLaebel/lukasleander_dk",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "CSS",
+          "percent": 53.6
+        },
+        {
+          "name": "HTML",
+          "percent": 23.9
+        },
+        {
+          "name": "JavaScript",
+          "percent": 22.5
+        }
+      ],
+      "primaryLanguage": "CSS",
+      "tools": [
+        "CSS",
+        "HTML",
+        "JavaScript"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.240Z"
+    },
+    {
+      "id": 974662910,
+      "name": "LukasLLaebel",
+      "owner": "LukasLLaebel",
+      "description": "No description",
+      "link": "https://github.com/LukasLLaebel/LukasLLaebel",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [],
+      "primaryLanguage": "Unknown",
+      "tools": [],
+      "updatedAt": "2026-04-06T15:04:55.234Z"
+    },
+    {
+      "id": 924484185,
+      "name": "Multi_word_file_search",
+      "owner": "LukasLLaebel",
+      "description": "want to search for keywords in multible word files. with just some python you can do it. ",
+      "link": "https://github.com/LukasLLaebel/Multi_word_file_search",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "Python",
+          "percent": 100
+        }
+      ],
+      "primaryLanguage": "Python",
+      "tools": [
+        "Python"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.256Z"
+    },
+    {
+      "id": 1156431567,
+      "name": "my_php_projects",
+      "owner": "LukasLLaebel",
+      "description": "my php projects over all in one",
+      "link": "https://github.com/LukasLLaebel/my_php_projects",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "PHP",
+          "percent": 72.6
+        },
+        {
+          "name": "CSS",
+          "percent": 12.1
+        },
+        {
+          "name": "JavaScript",
+          "percent": 8.1
+        },
+        {
+          "name": "HTML",
+          "percent": 3.8
+        },
+        {
+          "name": "Hack",
+          "percent": 3.4
+        }
+      ],
+      "primaryLanguage": "PHP",
       "tools": [
         "PHP",
-        "HTML",
         "CSS",
         "JavaScript",
-        "Vue",
-        "Node.js"
+        "HTML",
+        "Hack"
       ],
-      "link": "https://example.com"
+      "updatedAt": "2026-04-06T15:04:55.238Z"
+    },
+    {
+      "id": 1145123381,
+      "name": "p1---parkingSpot",
+      "owner": "LukasLLaebel",
+      "description": "automasation of parkingspots on a parkinglot",
+      "link": "https://github.com/LukasLLaebel/p1---parkingSpot",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "C",
+          "percent": 93.9
+        },
+        {
+          "name": "CMake",
+          "percent": 6.1
+        }
+      ],
+      "primaryLanguage": "C",
+      "tools": [
+        "C",
+        "CMake"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.236Z"
+    },
+    {
+      "id": 1183526618,
+      "name": "P2",
+      "owner": "LukasLLaebel",
+      "description": "No description",
+      "link": "https://github.com/LukasLLaebel/P2",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "JavaScript",
+          "percent": 72.6
+        },
+        {
+          "name": "CSS",
+          "percent": 16.6
+        },
+        {
+          "name": "HTML",
+          "percent": 10.8
+        }
+      ],
+      "primaryLanguage": "JavaScript",
+      "tools": [
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.250Z"
+    },
+    {
+      "id": 1113346330,
+      "name": "PhysicsEngine",
+      "owner": "LukasLLaebel",
+      "description": "Trying to make a physicsEngine in C IDK just for fun",
+      "link": "https://github.com/LukasLLaebel/PhysicsEngine",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "C",
+          "percent": 67.1
+        },
+        {
+          "name": "CMake",
+          "percent": 32.9
+        }
+      ],
+      "primaryLanguage": "C",
+      "tools": [
+        "C",
+        "CMake"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.247Z"
+    },
+    {
+      "id": 1193012845,
+      "name": "portfolio",
+      "owner": "LukasLLaebel",
+      "description": "This is my portfolio website",
+      "link": "https://github.com/LukasLLaebel/portfolio",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "Vue",
+          "percent": 49.2
+        },
+        {
+          "name": "CSS",
+          "percent": 36.6
+        },
+        {
+          "name": "JavaScript",
+          "percent": 12.3
+        },
+        {
+          "name": "HTML",
+          "percent": 1.9
+        }
+      ],
+      "primaryLanguage": "Vue",
+      "tools": [
+        "Vue",
+        "CSS",
+        "JavaScript",
+        "HTML"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.245Z"
+    },
+    {
+      "id": 602594679,
+      "name": "SpaceInvasion",
+      "owner": "LukasLLaebel",
+      "description": "This is a modpack for people who loves the idea of having space elements added to their normal vanilla minecraft.",
+      "link": "https://github.com/LukasLLaebel/SpaceInvasion",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "Java",
+          "percent": 100
+        }
+      ],
+      "primaryLanguage": "Java",
+      "tools": [
+        "Java"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.252Z"
+    },
+    {
+      "id": 983161128,
+      "name": "Terraria-clone",
+      "owner": "LukasLLaebel",
+      "description": "A simple 2D game inspired by Terraria, currently being developed in C++.",
+      "link": "https://github.com/LukasLLaebel/Terraria-clone",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "C++",
+          "percent": 93.9
+        },
+        {
+          "name": "CMake",
+          "percent": 5.6
+        },
+        {
+          "name": "GLSL",
+          "percent": 0.4
+        },
+        {
+          "name": "C",
+          "percent": 0.1
+        }
+      ],
+      "primaryLanguage": "C++",
+      "tools": [
+        "C++",
+        "CMake",
+        "GLSL",
+        "C"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.254Z"
+    },
+    {
+      "id": 1095292315,
+      "name": "TodoListUsingRaylib",
+      "owner": "LukasLLaebel",
+      "description": "TodoList Using Raylib",
+      "link": "https://github.com/LukasLLaebel/TodoListUsingRaylib",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [
+        {
+          "name": "C",
+          "percent": 61.7
+        },
+        {
+          "name": "CMake",
+          "percent": 38.3
+        }
+      ],
+      "primaryLanguage": "C",
+      "tools": [
+        "C",
+        "CMake"
+      ],
+      "updatedAt": "2026-04-06T15:04:55.248Z"
+    },
+    {
+      "id": 787507388,
+      "name": "Wazuh-Discord-Integration",
+      "owner": "LukasLLaebel",
+      "description": "This is a tuned Discord integration for Wazuh. It uses webhook from Discord to send important Wazuh alerts to a Discord channel on a Discord server",
+      "link": "https://github.com/LukasLLaebel/Wazuh-Discord-Integration",
+      "stars": 0,
+      "forks": 0,
+      "isPinned": false,
+      "languages": [],
+      "primaryLanguage": "Unknown",
+      "tools": [],
+      "updatedAt": "2026-04-06T15:04:55.259Z"
     }
   ],
-  "contacts": []
+  "contacts": [],
+  "lastSync": "2026-04-06T15:04:55.260Z"
 }
