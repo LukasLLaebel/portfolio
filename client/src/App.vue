@@ -8,8 +8,8 @@ import FooterSection from './components/footer.vue'
 
 <template>
   <HeroSection />
-  <!--<AboutSection /> 
-  <ProjectsSection />
+    <!-- <AboutSection /> 
+<ProjectsSection />
   <ContactSection />
   <FooterSection /> -->
 </template>
