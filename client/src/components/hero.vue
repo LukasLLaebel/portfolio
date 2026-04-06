@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 
 const projects = ref([]);
 
@@ -7,7 +7,9 @@ onMounted(async () => {
   const res = await fetch('http://localhost:3001/api/projects');
   projects.value = await res.json();
 });
-
+const pinnedProjects = computed(() => {
+  return projects.value.filter(p => p.isPinned)
+})
 const getToolIcon = (toolName) => {
   const icons = {
     'PHP': 'fa-brands fa-php',
@@ -112,7 +114,7 @@ const getToolIcon = (toolName) => {
     <section class="projects">
       <h3>Featured projects</h3>
       <div class="projects-wrapper">
-        <div class="project" v-for="project in projects" :key="project.id">
+        <div class="project" v-for="project in pinnedProjects" :key="project.id">
         <!--<div class="project" v-if="project.isPinned" :key="project.id"> -->
           <h4>{{ project.name }}</h4>
           <div class="purple-line"></div>

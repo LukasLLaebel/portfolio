@@ -10,23 +10,38 @@ class GitHubService {
     try {
       console.log(`[${new Date().toISOString()}] Fetching GitHub projects...`);
 
-      // Fetch all repos
-      const reposRes = await axios.get(`${GITHUB_API_URL}/users/${GITHUB_USER}/repos`);
-      const repos = reposRes.data;
+      const token = process.env.GITHUB_TOKEN;
+      console.log('Using token:', token ? 'Yes' : 'No');
 
-      // Fetch pinned repos
+      // Create axios instance with auth header
+      const axiosWithAuth = axios.create({
+        headers: token ? {
+          Authorization: `token ${token}`
+        } : {}
+      });
+
+      // Fetch pinned repos - uses "name" not "repo"
       let pinnedNames = new Set();
       try {
         const pinnedRes = await axios.get(`${PINNED_API_URL}/${GITHUB_USER}`);
-        pinnedNames = new Set(pinnedRes.data.map(p => p.repo));
+        console.log('===== PINNED REPOS =====');
+        pinnedRes.data.forEach(p => console.log(`- ${p.name}`));
+        console.log('===== END PINNED =====');
+
+        // Extract "name" field from pinned API
+        pinnedNames = new Set(pinnedRes.data.map(p => p.name));
+        console.log('Pinned Names Set:', Array.from(pinnedNames));
       } catch (error) {
         console.warn('Could not fetch pinned repos:', error.message);
       }
 
-      // Process each repo
+      const reposRes = await axiosWithAuth.get(`${GITHUB_API_URL}/users/${GITHUB_USER}/repos`);
+      const repos = reposRes.data;
+      console.log('GitHub repos:', repos.map(r => r.name));
+
       const projects = await Promise.all(
         repos.map(async (repo) => {
-          return await this.enrichRepoData(repo, pinnedNames);
+          return await this.enrichRepoData(repo, pinnedNames, axiosWithAuth);
         })
       );
 
@@ -38,17 +53,16 @@ class GitHubService {
     }
   }
 
-  async enrichRepoData(repo, pinnedNames) {
+  async enrichRepoData(repo, pinnedNames, axiosWithAuth) {
     let languages = [];
     let toolsArray = [];
 
     try {
-      const langRes = await axios.get(
+      const langRes = await axiosWithAuth.get(
         `${GITHUB_API_URL}/repos/${repo.owner.login}/${repo.name}/languages`
       );
       const langData = langRes.data;
 
-      // Convert to percentage format
       if (Object.keys(langData).length > 0) {
         const total = Object.values(langData).reduce((a, b) => a + b, 0);
         languages = Object.entries(langData)
@@ -68,6 +82,9 @@ class GitHubService {
       }
     }
 
+    const isPinned = pinnedNames.has(repo.name);
+    console.log(`Checking: "${repo.name}" - isPinned: ${isPinned}`);
+
     return {
       id: repo.id,
       name: repo.name,
@@ -76,7 +93,7 @@ class GitHubService {
       link: repo.html_url,
       stars: repo.stargazers_count,
       forks: repo.forks_count,
-      isPinned: pinnedNames.has(repo.name),
+      isPinned,
       languages,
       primaryLanguage: languages[0]?.name || 'Unknown',
       tools: toolsArray,

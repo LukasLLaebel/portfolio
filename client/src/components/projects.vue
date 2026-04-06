@@ -1,34 +1,60 @@
 <script setup>
+import { ref, onMounted } from 'vue';
 
+const projects = ref([]);
+
+onMounted(async () => {
+  const res = await fetch('http://localhost:3001/api/projects');
+  projects.value = await res.json();
+});
+
+const getToolIcon = (toolName) => {
+  const icons = {
+    'PHP': 'fa-brands fa-php',
+    'HTML': 'fa-brands fa-html5',
+    'CSS': 'fa-brands fa-css3-alt',
+    'JavaScript': 'fa-brands fa-js',
+    'Vue': 'fa-brands fa-vuejs',
+    'Node.js': 'fa-brands fa-node-js'
+  };
+  return icons[toolName] || 'fa-solid fa-code';
+}
 </script>
 
 <template>
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project One</h3>
-      <p class="description">Description</p>
-      <p>Last updated</p>
-      <p>Languages</p>
-      <p>Stars</p>
-      <p class="link">
-        <a href="https://github.com/LukasLLaebel/LukasLLaebel" target="_blank" rel="noopener noreferrer">
-          View on GitHub
-        </a>
-      </p>
-    </div>
-  </section>
+<section class="projects">
+      <h3>Featured projects</h3>
+      <div class="projects-wrapper">
+        <div class="project" v-for="project in projects" :key="project.id">
+        <!--<div class="project" v-if="project.isPinned" :key="project.id"> -->
+          <h4>{{ project.name }}</h4>
+          <div class="purple-line"></div>
+          <div class="blue-line"></div>
+          <p>{{ project.description }}</p>
+          <div class="tools">
+            <div v-for="tool in project.tools" :key="tool" class="tool-bg">
+              <i :class="getToolIcon(tool)"></i>
+              <p class="mini">{{ tool }}</p>
+            </div>
+          </div>
+          <div class="meta-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <p class="mini">10</p>
+            </div>
+            <a target="_blank" v-bind:href="project.link">
+              <div class="go-to">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </section>
+
 </template>
 
 <style scoped>
-.projects {
-  padding: 2rem 0;
-}
-.projects ul {
-  list-style: none;
-  padding: 0;
-}
-.projects li {
-  margin-bottom: 0.5rem;
-}
+
 </style>
