@@ -4,8 +4,16 @@ import { ref, onMounted } from 'vue';
 const projects = ref([]);
 
 onMounted(async () => {
-  const res = await fetch('http://localhost:3001/api/projects');
-  projects.value = await res.json();
+  try {
+    // Use window.location.hostname to get the actual server IP
+    const apiUrl = `http://${window.location.hostname}:3001/api/projects`;
+    const res = await fetch(apiUrl);
+    if (!res.ok) throw new Error(`API error: ${res.status}`);
+    projects.value = await res.json();
+  } catch (error) {
+    console.error('Failed to fetch projects:', error);
+    projects.value = [];
+  }
 });
 
 const getToolIcon = (toolName) => {
