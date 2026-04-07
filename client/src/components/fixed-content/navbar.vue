@@ -45,11 +45,10 @@ nav .nav-link {
   text-decoration: none;
 }
 
-nav .nav-link:active {
+nav .nav-link:active, nav .nav-link:hover {
   color: var(--blue-200);
-  font-weight: 100;
-  text-decoration: none;
 }
+
 
 nav i {
   font-size: 18px;

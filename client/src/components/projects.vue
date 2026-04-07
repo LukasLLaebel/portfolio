@@ -22,7 +22,7 @@ const getToolIcon = (toolName) => {
 </script>
 
 <template>
-<section class="projects">
+<main class="projects">
       <h1>Projects</h1>
       <div class="projects-wrapper">
         <div class="project" v-for="project in projects" :key="project.id">
@@ -51,7 +51,7 @@ const getToolIcon = (toolName) => {
           </div>
         </div> 
       </div>
-    </section>
+    </main>
 
 </template>
 

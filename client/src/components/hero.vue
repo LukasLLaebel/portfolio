@@ -110,7 +110,7 @@ const getToolIcon = (toolName) => {
             </a>
           </div>
         </div> 
-      </div>
+      </div> 
     </section>
 
     <section class="tech-stack">
